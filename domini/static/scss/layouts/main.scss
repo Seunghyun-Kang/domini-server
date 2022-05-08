@@ -14,6 +14,7 @@ label {
     font-family: 'Montserrat';
 }
 input {
+    color: white;
     display: block;
     width: 100%;
     border: none;
@@ -21,7 +22,7 @@ input {
     box-sizing: border-box;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     @include transition(.3s ease);
     padding-top: 30px;
     padding-bottom: 3px;
@@ -35,6 +36,15 @@ input {
     &:invalid + .form-label {
         display: block;
     }
+    &:focus {
+        color: black !important;
+}
+}
+.date {
+    color: white !important;
+    &:focus {
+        color: black !important;
+}
 }
 .form-label {
     position: absolute;

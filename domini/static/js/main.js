@@ -8,13 +8,13 @@
              element.before(error); 
         },
         rules: {
-            first_name : {
+            name : {
                 required: true,
             },
-            last_name : {
+            birthday : {
                 required: true,
             },
-            email : {
+            person_num : {
                 required: true,
             }
         },

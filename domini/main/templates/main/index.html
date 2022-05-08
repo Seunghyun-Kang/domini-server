@@ -22,34 +22,33 @@
                 <div>
                     <h3></h3>
                     <fieldset>
-                        <input type="text" name="first_name" id="first_name" />
-                        <label for="first_name" class="form-label">01 . 이름이 뭔가요?</label>
+                        <input type="text" name="name" id="name" />
+                        <label for="name" class="form-label">01 . 이름이 뭔가요?</label>
                     </fieldset>
 
                     <h3></h3>
                     <fieldset>
-                        <input type="text" name="last_name" id="last_name" />
-                        <label for="last_name" class="form-label">02 . 생일이 언제인가요?</label>
+                        <input class="date" type="date" name="birthday" id="birthday" />
+                        <label for="birthday" class="form-label">02 . 생일이 언제인가요?</label>
                     </fieldset>
 
                     <h3></h3>
                     <fieldset>
-                        <input type="email" name="email" id="email" />
-                        <label for="email" class="form-label">03 . 항공 탑승 예정 인원이 몇 명인가요?</label>
+                        <input type="number" name="person_num" id="person_num" />
+                        <label for="person_num" class="form-label">03 . 항공 탑승 인원이 몇 명인가요?</label>
                     </fieldset>
 
                     <h3></h3>
                     <fieldset>
-                        <input type="text" name="password" id="password" />
-                        <label for="password" class="form-label">04 . 김포 -> 제주 날짜</label>
-                        <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        <input class="date" type="date" name="start_date" id="start_date" />
+                        <label for="start_date" class="form-label">04 . 김포 -> 제주 날짜</label>
                     </fieldset>
 
                     <h3></h3>
                     <fieldset>
-                        <input type="text" name="re_password" id="re_password" />
-                        <label for="re_password" class="form-label">05 . 제주 -> 김포 날짜</label>
-                        <span toggle="#re_password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        <input class="date" type="date" name="end_date" id="end_date" />
+                        <label for="end_date" class="form-label">05 . 제주 -> 김포 날짜</label>
+                        <!-- <span toggle="#re_password" class="zmdi zmdi-eye field-icon toggle-password"></span> -->
                     </fieldset>
                 </div>
             </form>

@@ -171,6 +171,7 @@ input {
   font-family: 'Montserrat';
   font-weight: bold;
   font-size: 20px;
+  color: white;
   transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -179,6 +180,8 @@ input {
   padding-top: 30px;
   padding-bottom: 3px;
   -webkit-appearance: none; }
+  input:focus {
+    color: black; }
   input:focus + .form-label {
     top: 4px;
     font-size: 13px;

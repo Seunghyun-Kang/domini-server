@@ -1,8 +1,11 @@
-from django.urls import path
-
+from django.urls import include, path, re_path
+from rest_framework import routers
 from . import views
 
+router = routers.DefaultRouter()
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', include(router.urls)),
+    path('airlineEvent/<str:symbol>/', views.postUserInfo),
+    
 ]

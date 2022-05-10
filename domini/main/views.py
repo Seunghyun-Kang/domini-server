@@ -18,7 +18,7 @@ def index(request):
     return render(request,'main/index.html')
 
 @api_view(['POST'])
-def postUserInfo(request):
+def postUserInfo(request, type):
     try:
         print(request.data)
         events = AirlineEvent.objects.all()

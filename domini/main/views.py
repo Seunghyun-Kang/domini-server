@@ -18,8 +18,9 @@ def index(request):
     return render(request,'main/index.html')
 
 @api_view(['POST'])
-def postUserInfo(request, pk):
+def postUserInfo(request):
     try:
+        print(request.data)
         events = AirlineEvent.objects.all()
         serializer = AirlineEventSerializer(events, many=True)
     except:

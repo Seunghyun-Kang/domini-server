@@ -17,7 +17,7 @@ import pandas as pd
 def index(request):
     return render(request,'main/index.html')
 
-@api_view(['POST'])
+@api_view(['PUT'])
 def postUserInfo(request, type):
     try:
         print(request.data)

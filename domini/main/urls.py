@@ -6,6 +6,5 @@ router = routers.DefaultRouter()
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('airlineEvent/<str:symbol>/', views.postUserInfo),
-    
+    path('airlineEvent/', views.postUserInfo)
 ]

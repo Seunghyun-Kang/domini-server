@@ -1,0 +1,19 @@
+항공사,카드사,통신사,페이앱,최소비용,주중/주말,편도/왕복,이벤트참여여부,할인방식,할인금액,중복가능여부,특이사항,행사기간
+제주에어,none,none,카카오페이,70000,none,none,none,absolute,5000,none,none,2022-04-26 ~ 2022-05-08
+진에어,우리,none,none,100000,none,none,yes,absolute,20000,none,"4/20,4/22,5/20,5/2210시선착순쿠폰발급",2022-04-20 ~ 2022-05-22
+진에어,우리,none,none,100000,none,none,yes,absolute,10000,none,매일 오후9시부터 쿠폰 발급,2022-02-01 ~ 2022-11-30
+진에어,하나,none,none,100000,none,none,yes,absolute,40000,none,"매월1,11,21일10시선착순쿠폰발급",2021-12-31 ~ 2022-12-31
+진에어,삼성,none,none,100000,none,none,yes,absolute,3000,none,상시발급 쿠폰,2022-02-16 ~ 2022-05-24
+진에어,삼성,none,none,200000,none,none,yes,absolute,30000,none,5/18~5/24매일10시선착순쿠폰발급,2022-02-16 ~ 2022-05-24
+진에어,none,LG,none,50000,none,none,none,absolute,10000,none,U+ VIP 혜택,2022-01-03 ~ 2022-06-30
+티웨이,삼성,none,티웨이페이,70000,none,none,yes,absolute,10000,none,"쿠폰 적용 기간: 5/1 ~ 5/31(5/4~8, 6/4~7, 7/23~8/21, 9/8~13, 10/1~4, 10/8~11 제외)",2022-05-01 ~ 2022-05-31
+티웨이,현대,none,티웨이페이,70000,none,none,yes,absolute,10000,none,"쿠폰 적용 기간: 5/1 ~ 5/31(5/4~8, 6/4~7, 7/23~8/21, 9/8~13, 10/1~4, 10/8~11 제외)",2022-05-01 ~ 2022-05-31
+티웨이,none,none,카카오페이,300000,none,none,none,absolute,15000,none,none,2022-05-01 ~ 2022-05-31
+티웨이,none,none,카카오페이,100000,none,none,none,absolute,5000,none,none,2022-05-01 ~ 2022-05-31
+티웨이,농협,none,none,100000,none,none,yes,absolute,10000,none,"쿠폰 적용 기간: 5/1 ~ 7/22 (5/4~5/8, 6/5 ~ 6/7 제외)",2022-05-01 ~ 2022-05-31
+티웨이,우리,none,none,100000,none,none,yes,absolute,10000,none,"쿠폰 적용 기간: 5/1 ~ 7/22 (5/4~5/8, 6/5 ~ 6/7 제외)",2022-05-01 ~ 2022-05-31
+티웨이,농협,none,none,50000,none,none,yes,absolute,5000,none,none,2022-05-01 ~ 2022-05-31
+티웨이,우리,none,none,50000,none,none,yes,absolute,5000,none,none,2022-05-01 ~ 2022-05-31
+티웨이,none,none,none,0,none,none,yes,absolute,5000,none,신규 가입 쿠폰,none
+에어서울,우리,none,none,50000,none,none,yes,absolute,5000,none,4/4~4/30 선착순 쿠폰 발급,none
+에어서울,농협,none,none,50000,none,none,yes,absolute,5000,none,4/20~4/26 선착순 쿠폰 발급,none

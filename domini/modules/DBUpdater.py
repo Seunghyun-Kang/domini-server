@@ -48,7 +48,7 @@ for index, item in enumerate(data.itertuples()):
         event = 'N'
     
     if ' ~ ' in item.period: 
-        start_date, end_date = item.행사기간.split(sep=' ~ ')
+        start_date, end_date = item.period.split(sep=' ~ ')
     else:
         start_date = None
         end_date = None

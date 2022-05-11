@@ -46,7 +46,12 @@ for index, item in enumerate(data.itertuples()):
         event = 'Y'
     else :
         event = 'N'
-    start_date, end_date = item.행사기간.split(sep=' ~ ')
+    
+    if ' ~ ' in item.행사기간: 
+        start_date, end_date = item.행사기간.split(sep=' ~ ')
+    else:
+        start_date = None
+        end_date = None
 
 with conn.cursor() as curs:
     sql = f"REPLACE INTO airline_events VALUES ('{index}', '{item.항공사}', '{item.카드사}', '{item.통신사}', '{item.페이앱}', '{item.최소비용}', '{item.할인금액}' , '{item.주중/주말}', '{item.편도/왕복}', '{event}', '{item.할인방식}', '{item.중복가능여부}', '{item.특이사항}', '{start_date}', '{end_date}')"

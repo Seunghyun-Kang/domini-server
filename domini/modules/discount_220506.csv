@@ -1,4 +1,4 @@
-항공사,카드사,통신사,페이앱,최소비용,주중/주말,편도/왕복,이벤트참여여부,할인방식,할인금액,중복가능여부,특이사항,행사기간
+airline,credit_card,mobile_carrier,pay_application,min_cost,is_weekend,is_oneway,is_event,discount_type,discount,duplicate,option,period
 제주에어,none,none,카카오페이,70000,none,none,none,absolute,5000,none,none,2022-04-26 ~ 2022-05-08
 진에어,우리,none,none,100000,none,none,yes,absolute,20000,none,"4/20,4/22,5/20,5/2210시선착순쿠폰발급",2022-04-20 ~ 2022-05-22
 진에어,우리,none,none,100000,none,none,yes,absolute,10000,none,매일 오후9시부터 쿠폰 발급,2022-02-01 ~ 2022-11-30

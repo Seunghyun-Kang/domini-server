@@ -50,10 +50,10 @@ for index, item in enumerate(data.itertuples()):
     if ' ~ ' in item.period: 
         start_date, end_date = item.period.split(sep=' ~ ')
     else:
-        start_date = None
-        end_date = None
+        start_date = '0000-00-00'
+        end_date = '0000-00-00'
 
-with conn.cursor() as curs:
-    sql = f"REPLACE INTO airline_events VALUES ('{index}', '{item.airline}', '{item.credit_card}', '{item.mobile_carrier}', '{item.pay_application}', '{item.min_cost}', '{item.discount}' , '{item.is_weekend}', '{item.is_oneway}', '{event}', '{item.discount_type}', '{item.duplicate}', '{item.option}', '{start_date}', '{end_date}')"
-    curs.execute(sql)
-    conn.commit()
+    with conn.cursor() as curs:
+        sql = f"REPLACE INTO airline_events VALUES ('{index}', '{item.airline}', '{item.credit_card}', '{item.mobile_carrier}', '{item.pay_application}', '{item.min_cost}', '{item.discount}' , '{item.is_weekend}', '{item.is_oneway}', '{event}', '{item.discount_type}', '{item.duplicate}', '{item.option}', '{start_date}', '{end_date}')"
+        curs.execute(sql)
+        conn.commit()

@@ -84,7 +84,7 @@ for index, item in enumerate(data.itertuples()):
         event = 'Y'
     else :
         event = 'N'
-        
+
     if '삼성' in item.credit_card :
         card_samsung = 'Y'
     if '신한' in item.credit_card :
@@ -127,6 +127,6 @@ for index, item in enumerate(data.itertuples()):
         end_date = '0000-00-00'
 
     with conn.cursor() as curs:
-        sql = f"REPLACE INTO airline_events VALUES ('{index}', '{item.airline}', '{card_samsung}', '{card_shinhan}', '{card_kb}','{card_bc}', '{card_hyundai}', '{card_nh}', '{card_lotte}', '{card_woori}', '{mc_skt}', {mc_kt}',{mc_lgu}',{mc_vip}','{pay_kakao}', '{pay_naver}','{pay_smile}','{pay_payco}','{item.min_cost}', '{item.discount}' , '{item.is_weekend}', '{item.is_oneway}', '{event}', '{item.discount_type}', '{item.duplicate}', '{item.option}', '{start_date}', '{end_date}')"
+        sql = f"REPLACE INTO airline_events VALUES ('{index}', '{item.airline}', '{card_samsung}', '{card_shinhan}', '{card_kb}','{card_bc}', '{card_hyundai}', '{card_nh}', '{card_lotte}', '{card_woori}', '{mc_skt}', '{mc_kt}','{mc_lgu}','{mc_vip}','{pay_kakao}', '{pay_naver}','{pay_smile}','{pay_payco}','{item.min_cost}', '{item.discount}' , '{item.is_weekend}', '{item.is_oneway}', '{event}', '{item.discount_type}', '{item.duplicate}', '{item.option}', '{start_date}', '{end_date}')"
         curs.execute(sql)
         conn.commit()

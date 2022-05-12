@@ -2,17 +2,27 @@ from django.db import models
 
 class UserInfo(models.Model):
     id = models.IntegerField(primary_key=True)
-    name = models.CharField(blank=True, null=True, max_length=20)
     age = models.IntegerField(blank=True, null=True)
     sex = models.CharField(blank=True, null=True, max_length=2)
-    mobile_carrier = models.CharField(blank=True, null=True, max_length=20)
-    credit_card = models.CharField(blank=True, null=True, max_length=100)
-    mc_grade = models.CharField(blank=True, null=True, max_length=11)
-    pay_application = models.CharField(blank=True, null=True, max_length=100)
-    new_card_will = models.IntegerField(blank=True, null=True)
-    new_mc_will = models.IntegerField(blank=True, null=True)
-    new_app_will = models.IntegerField(blank=True, null=True)
-    event_will = models.IntegerField(blank=True, null=True)
+    
+    card_samsung = models.CharField(blank=True, null=True, max_length=5)
+    card_shinhan = models.CharField(blank=True, null=True, max_length=5)
+    card_kb = models.CharField(blank=True, null=True, max_length=5)
+    card_bc = models.CharField(blank=True, null=True, max_length=5)
+    card_hyundai = models.CharField(blank=True, null=True, max_length=5)
+    card_nh = models.CharField(blank=True, null=True, max_length=5)
+    card_lotte = models.CharField(blank=True, null=True, max_length=5)
+    card_woori = models.CharField(blank=True, null=True, max_length=5)
+
+    mc_skt = models.CharField(blank=True, null=True, max_length=5)
+    mc_kt = models.CharField(blank=True, null=True, max_length=5)
+    mc_lgu = models.CharField(blank=True, null=True, max_length=5)
+    mc_vip = models.CharField(blank=True, null=True, max_length=5)
+
+    pay_kakao = models.CharField(blank=True, null=True, max_length=5)
+    mc_naver = models.CharField(blank=True, null=True, max_length=5)
+    mc_payco = models.CharField(blank=True, null=True, max_length=5)
+    mc_smile = models.CharField(blank=True, null=True, max_length=5)
 
     class Meta:
         managed = False
@@ -21,9 +31,26 @@ class UserInfo(models.Model):
 class AirlineEvent(models.Model):
     id = models.IntegerField(primary_key=True)
     airline = models.CharField(blank=True, null=True, max_length=10)
-    credit_card = models.CharField(blank=True, null=True, max_length=10)
-    mobile_carrier = models.CharField(blank=True, null=True, max_length=10)
-    pay_application = models.CharField(blank=True, null=True, max_length=10)
+    
+    card_samsung = models.CharField(blank=True, null=True, max_length=5)
+    card_shinhan = models.CharField(blank=True, null=True, max_length=5)
+    card_kb = models.CharField(blank=True, null=True, max_length=5)
+    card_bc = models.CharField(blank=True, null=True, max_length=5)
+    card_hyundai = models.CharField(blank=True, null=True, max_length=5)
+    card_nh = models.CharField(blank=True, null=True, max_length=5)
+    card_lotte = models.CharField(blank=True, null=True, max_length=5)
+    card_woori = models.CharField(blank=True, null=True, max_length=5)
+
+    mc_skt = models.CharField(blank=True, null=True, max_length=5)
+    mc_kt = models.CharField(blank=True, null=True, max_length=5)
+    mc_lgu = models.CharField(blank=True, null=True, max_length=5)
+    mc_vip = models.CharField(blank=True, null=True, max_length=5)
+
+    pay_kakao = models.CharField(blank=True, null=True, max_length=5)
+    mc_naver = models.CharField(blank=True, null=True, max_length=5)
+    mc_payco = models.CharField(blank=True, null=True, max_length=5)
+    mc_smile = models.CharField(blank=True, null=True, max_length=5)
+
     min_cost = models.IntegerField(blank=True, null=True)
     discount = models.IntegerField(blank=True, null=True)
     is_weekend = models.CharField(blank=True, null=True, max_length=10)

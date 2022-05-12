@@ -80,6 +80,11 @@ for index, item in enumerate(data.itertuples()):
     pay_payco = 'N'
     pay_smile = 'N'
 
+    if item.is_event == 'yes':
+        event = 'Y'
+    else :
+        event = 'N'
+        
     if '삼성' in item.credit_card :
         card_samsung = 'Y'
     if '신한' in item.credit_card :

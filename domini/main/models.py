@@ -20,9 +20,9 @@ class UserInfo(models.Model):
     mc_vip = models.CharField(blank=True, null=True, max_length=5)
 
     pay_kakao = models.CharField(blank=True, null=True, max_length=5)
-    mc_naver = models.CharField(blank=True, null=True, max_length=5)
-    mc_payco = models.CharField(blank=True, null=True, max_length=5)
-    mc_smile = models.CharField(blank=True, null=True, max_length=5)
+    pay_naver = models.CharField(blank=True, null=True, max_length=5)
+    pay_payco = models.CharField(blank=True, null=True, max_length=5)
+    pay_smile = models.CharField(blank=True, null=True, max_length=5)
 
     class Meta:
         managed = False
@@ -47,9 +47,9 @@ class AirlineEvent(models.Model):
     mc_vip = models.CharField(blank=True, null=True, max_length=5)
 
     pay_kakao = models.CharField(blank=True, null=True, max_length=5)
-    mc_naver = models.CharField(blank=True, null=True, max_length=5)
-    mc_payco = models.CharField(blank=True, null=True, max_length=5)
-    mc_smile = models.CharField(blank=True, null=True, max_length=5)
+    pay_naver = models.CharField(blank=True, null=True, max_length=5)
+    pay_payco = models.CharField(blank=True, null=True, max_length=5)
+    pay_smile = models.CharField(blank=True, null=True, max_length=5)
 
     min_cost = models.IntegerField(blank=True, null=True)
     discount = models.IntegerField(blank=True, null=True)
